@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <a>Register</a>
-  <a>Display Records</a>
-  <body>
-       <table border="">
-  <tr>
-    <th>Image</th>
-    <th>Name</th>
-    <th>Gender</th>
-    <th>DOB</th>
-    <th>Address</th>
-    <th>Country</th>
-    <th>Interested Tech Stack</th>
-  </tr>
-  <tr>
-    <td></td>
-    <td>Padmavathy</td>
-    <td>Female</td>
-  </tr>
-        </table>
-        </body>
+
+<body>
+	<form>
+		<table border="1">
+			<tr>
+				<td><label for="image">Image</label></td>
+				<td><img src="smiley.gif">
+				<td>
+			</tr>
+			<tr>
+				<td><label for="name">Name</label></td>
+				<td><input type="text" id="name" name="name" value=Padmavathy></td>
+			</tr>
+			<tr>
+				<td><label for="date">DOB:</label></td>
+				<td><input type="month" id="date" name="bdaymonth"></td>
+			</tr>
+			<tr>
+				<td><label for="gender">Gender</label></td>
+				<td><input type="radio" id="male" name="gender" value="male">
+					<label for="male">Male</label>
+					<input type="radio" id="female" name="gender" value="female" checked>
+					<label for="female">Female</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="address">Address</label></td>
+				<td><textarea >9800 Fredericksburg Road, 78240</textarea>
+			</tr>
+			<tr>
+				<td><label for="stack">Tech Stack</label></td>
+				<td><input type="checkbox" id="stack1" name="stack1" value="HTML" checked >
+					<label for="stack1">HTML</label>
+					<input type="checkbox" id="stack2" name="stack2" value="JS" >
+					<label for="stack2">JS</label>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
 </html>
